@@ -1,5 +1,11 @@
 # 🩺 PancreaSense
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.46-red)
+
+---
+
 > **AI-powered pancreas detection and segmentation from abdominal CT scans using CNN classification and U-Net deep learning.**
 
 PancreaSense is a deep learning–based medical imaging application that analyzes abdominal CT scan slices to automatically detect and precisely segment the pancreas region. It combines a CNN classifier for presence detection with a U-Net model for pixel-wise segmentation, wrapped in an interactive Streamlit dashboard.
@@ -31,14 +37,12 @@ PancreaSense is a deep learning–based medical imaging application that analyze
 | Accuracy  | 98.50%  |
 | Precision | 97.83%  |
 | Recall    | 98.04%  |
-| Loss      | 0.0407  |
 
 ### U-Net (Segmentation)
 
 | Metric            | Value               |
 |-------------------|---------------------|
 | Best Dice (val)   | 0.8142              |
-| Best Val Loss     | 0.1855              |
 | Training Epochs   | 15/20 (early stop)  |
 | Input Resolution  | 256 × 256 px        |
 
@@ -145,7 +149,7 @@ models/
 ### 5. Run the application
 
 ```bash
-streamlit run app.py
+streamlit run app/streamlit_app.py
 ```
 
 Open `http://localhost:8501` in your browser and upload an abdominal CT image (PNG or JPG).
@@ -190,7 +194,9 @@ kagglehub
 - Task: Pancreas Segmentation
 - Modality: CT Scan
 - Organ: Pancreas
-- Preprocessed Input Size: 256 × 256 pixels
+- Training Images: 5505
+- Test Images: 1377
+- Input Resolution: 256×256
 
 To download the dataset:
 
@@ -232,7 +238,8 @@ PancreaSense is an **AI-assisted screening tool** developed for research and edu
 
 **Harsha Vardhan S**
 
-B.E. Computer Science and Engineering — R.M.D Engineering College
+B.E. Computer Science and Engineering 
+R.M.D Engineering College
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/harshavardhan21-dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/harsha-vardhan-s-7019212b8/)
